@@ -38,4 +38,14 @@ async function main() {
 ```
 
 
+The related .env file, put it at the root folder
+
+```
+SF_LOGIN="https://login.salesforce.com"
+SF_USERNAME="oscar.m.liu.partner@pccw.com"
+SF_PASSWORD="P@55w0rd112233"
+SF_SECURITYTOKEN="Zt7ZAwcHoly9N2tXQTdXY1o4"
+OPENAI_ACCESS_TOKEN=""
+```
+
 
