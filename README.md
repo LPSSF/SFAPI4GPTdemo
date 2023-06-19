@@ -66,3 +66,20 @@ With authed background, use the same code template in Auth to query the pipeline
 ```
 SELECT Id,name,  owner.name ,account.name,TCV_Exclude_VAT__c, EBITDA__c FROM Opportunity Where Account.Id = ? limit 10
 ```
+
+
+### Approval List
+
+With authed context, use the same code template in Auth to query the pipeline data.
+1. with User Id to get Approval List. 
+2. limit return result to max 10
+
+
+Using Query 
+```
+Select Id, name,assigned_user__c, assigned_user__r.name, Approval_status__c, Approval_Submission_Time__c  from Approval_Action_log__c where Approval_status__c = 'Pending' and  assigned_user__r.name = 'CM Lee' Limit 10 
+
+```
+
+Change assigned user name accordingly.
+
