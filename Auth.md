@@ -1,4 +1,7 @@
 ## Auth with an user use jsforce - demo code in Node.js
+
+### function for 1) get the access of salesforce connect with setting. 2) Access Account info. 
+
 ```
 
 import jsfroce from "jsforce";
