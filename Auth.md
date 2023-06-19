@@ -10,9 +10,9 @@ dotenv.config();
 
 async function main() {
   const conn = new jsfroce.Connection({
-          loginUrl: 'https://login.salesforce.com'
+          loginUrl: process.env.SF_LOGIN
         });
-        conn.login(process.env.SF_USERNAME, process.env.SF_PASSWORD, function(err, userInfo) {
+        conn.login(process.env.SF_USERNAME, process.env.SF_PASSWORD + process.env.SF_SECURITYTOKEN , function(err, userInfo) {
           if (err) { return console.error(err); }
           // Now you can get the access token and instance URL information.
           // Save them to establish connection next time.
@@ -41,9 +41,9 @@ async function main() {
 The related .env file, put it at the root folder
 
 ```
-SF_LOGIN="https://login.salesforce.com"
-SF_USERNAME="oscar.m.liu.partner@pccw.com"
-SF_PASSWORD="P@55w0rd112233"
+SF_LOGIN="https://test.salesforce.com"
+SF_USERNAME="system.devops@pccw.com.lpsdevsb02"
+SF_PASSWORD="LPS@hk2023"
 SF_SECURITYTOKEN="Zt7ZAwcHoly9N2tXQTdXY1o4"
 OPENAI_ACCESS_TOKEN=""
 ```
