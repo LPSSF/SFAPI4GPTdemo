@@ -71,7 +71,7 @@ SELECT Id,name,  owner.name ,account.name,TCV_Exclude_VAT__c, EBITDA__c FROM Opp
 ### Approval List
 
 With authed context, use the same code template in Auth to query the pipeline data.
-1. with User Id to get Approval List. 
+1. with Approval User name to get Approval List. 
 2. limit return result to max 10
 
 
