@@ -54,3 +54,15 @@ Reference:
 https://onlinehelp.coveo.com/en/ces/7.0/administrator/getting_the_security_token_for_your_salesforce_account.htm
 
 
+### Pipeline 
+
+With authed background, use the same code template in Auth to query the pipeline data.
+1. with Account Id to get Pipeline. 
+2. limit return result to max 10
+
+
+
+
+```
+SELECT Id,name,  owner.name ,account.name,TCV_Exclude_VAT__c, EBITDA__c FROM Opportunity Where Account.Id = ? limit 10
+```
