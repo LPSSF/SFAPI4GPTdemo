@@ -14,8 +14,6 @@ async function main() {
         });
         conn.login(process.env.SF_USERNAME, process.env.SF_PASSWORD + process.env.SF_SECURITYTOKEN , function(err, userInfo) {
           if (err) { return console.error(err); }
-          console.log(conn.accessToken);
-          console.log(conn.instanceUrl);
           // logged in user property
           console.log("User ID: " + userInfo.id);
           console.log("Org ID: " + userInfo.organizationId);
@@ -24,8 +22,7 @@ async function main() {
             console.log("total : " + result.totalSize);
             console.log("fetched : " + result.records.length);
             result.records.forEach(function(record) {
-              console.log(record);
-              console.log(record.name);
+              console.log(record.Name);
             });
           });
         });
