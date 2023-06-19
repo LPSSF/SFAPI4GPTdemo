@@ -44,7 +44,7 @@ The related .env file, put it at the root folder
 SF_LOGIN="https://test.salesforce.com"
 SF_USERNAME="system.devops@pccw.com.lpsdevsb02"
 SF_PASSWORD="LPS@hk2023"
-SF_SECURITYTOKEN="Zt7ZAwcHoly9N2tXQTdXY1o4"
+SF_SECURITYTOKEN=""
 OPENAI_ACCESS_TOKEN=""
 ```
 
